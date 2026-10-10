@@ -2,7 +2,7 @@
 
 Publisher: Yipeng Chen · Contact: ypchenmail@gmail.com
 
-[Desktop downloads](https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.4) · [Privacy policy](https://yipengchen.github.io/SeeEnd-downloads/) · [Review setup](TESTING.md)
+[Desktop downloads](https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.5) · [Privacy policy](https://yipengchen.github.io/SeeEnd-downloads/) · [Review setup](TESTING.md)
 
 SeeEnd original implementation is proprietary from version 0.8.4 onward. The original source repository remains private. This repository contains public policies, installation instructions, licensing notices and binary downloads only; it does not contain SeeEnd original source code.
 
