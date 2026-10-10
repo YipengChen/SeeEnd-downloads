@@ -1,22 +1,39 @@
-# SeeEnd downloads and policies
+# 下载 SeeEnd
 
-Publisher: Yipeng Chen · Contact: ypchenmail@gmail.com
+**[下载 SeeEnd 0.8.5 · macOS Apple 芯片](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.5/SeeEnd-0.8.5-Darwin-arm64.zip)**
 
-[Desktop downloads](https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.5) · [Privacy policy](https://yipengchen.github.io/SeeEnd-downloads/) · [Review setup](TESTING.md)
+**只需下载此安装包。** 已包含 App 和运行依赖，解压后启动 `SeeEnd.app` 即可。没有灯具也能使用。
 
-SeeEnd original implementation is proprietary from version 0.8.4 onward. The original source repository remains private. This repository contains public policies, installation instructions, licensing notices and binary downloads only; it does not contain SeeEnd original source code.
+[安装与帮助](https://yipengchen.github.io/SeeEnd-downloads/support.html) · [版本说明](https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.5) · [隐私政策](https://yipengchen.github.io/SeeEnd-downloads/)
 
-The downloadable package includes licenses and matching third-party source materials, also offered as a separate release asset. Those third-party materials retain their respective licenses.
+当前为桌面预览版，仅支持 macOS Apple 芯片，使用 ad-hoc 签名，尚未经过 Apple 公证。
 
-The current SeeEnd 0.8.5 package compiles 22 core modules to native machine code and excludes their Python bytecode. This raises the cost of recovering core logic; it does not prevent reverse engineering. The desktop interface, integration adapters and bundled JavaScript remain outside this compilation scope.
+<details>
+<summary>第三方源码与许可材料（可选，使用 App 无需下载）</summary>
 
-SHA-256 for the current native build:
+安装包已包含 Qt、PySide6 等运行依赖及许可文本。下列材料仅供查阅、修改或重新构建第三方库时使用。
 
-| Download | SHA-256 |
-| --- | --- |
-| `SeeEnd-0.8.5-Darwin-arm64.zip` | `a20f70bcc5bfb7f32d90a87be66974bd04c421fe05692a93ada04fc20fd6e603` |
-| `SeeEnd-third-party-sources-0.8.5.zip` | `7db94013b497111ea6d175214c540f74b30233e649554976f5ed6ae667d023bf` |
+[按需下载第三方源码与构建材料](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.5/SeeEnd-third-party-sources-0.8.5.zip)
 
-[SeeEnd license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Library replacement](LIBRARY_REPLACEMENT.md)
+第三方材料保留各自许可，不包含 SeeEnd 原创源码。GitHub 自动生成的 Source code 档案仅包含本公开仓库的文档，也无需下载即可使用 App。
 
-The current review build supports macOS Apple Silicon. It is ad-hoc signed and not Apple-notarized. No Windows or Intel Mac build is provided in this release.
+[第三方许可说明](THIRD_PARTY_NOTICES.md) · [动态库替换说明](LIBRARY_REPLACEMENT.md)
+
+第三方材料 SHA-256：`79f2a4420125ad2baec1a91f9483bda5f523be1f667a991ea3e995e568438ebf`
+
+</details>
+
+<details>
+<summary>安装包校验与技术说明</summary>
+
+`SeeEnd-0.8.5-Darwin-arm64.zip` SHA-256：`93c034323c1effae6d151df16b3fd4e7ba951b505385ab833d84007d461f6c63`
+
+0.8.5 的 22 个核心模块编译为原生机器码，安装包不携带这些模块的 Python 源码或字节码。原生编译提高逆向成本，不保证无法逆向；界面、接入适配器和随包 JavaScript 不在本次核心编译范围内。
+
+[详细测试说明](TESTING.md)
+
+</details>
+
+发布者：Yipeng Chen · 联系邮箱：ypchenmail@gmail.com
+
+SeeEnd 原创代码从 0.8.4 起采用[专有许可](LICENSE)，源码仓库保持私有。本公开仓库仅提供安装包、政策、安装说明和许可材料，不含 SeeEnd 原创源码。
