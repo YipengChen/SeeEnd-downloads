@@ -1,7 +1,7 @@
 # SeeEnd review test instructions
 
-Desktop app download: https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.4.
-Supported review build: SeeEnd 0.8.4 for macOS Apple Silicon; extension 0.2.8. Windows and Intel Mac review builds are not included in this kit.
+Desktop app download: https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.5.
+Supported review build: SeeEnd 0.8.5 for macOS Apple Silicon; extension 0.2.8. Windows and Intel Mac review builds are not included in this kit.
 Reviewer contact: ypchenmail@gmail.com.
 
 The desktop native host accepts this store item ID (miokmdeomlchjpihkcnommpnheagoimc) and the existing development ID. Public download availability must be checked before submission.
@@ -9,7 +9,7 @@ The desktop native host accepts this store item ID (miokmdeomlchjpihkcnommpnheag
 ## Setup
 
 1. Download the macOS Apple Silicon desktop build from the link above, unzip it and launch SeeEnd.app. If macOS blocks the download, follow the normal OS approval process; contact the developer if the supplied review build cannot launch.
-2. Install the extension supplied through the Web Store review flow. Keep SeeEnd running. Open its Application Integrations page (应用接入) and click Connect Chrome (连接 Chrome). This installs the com.aiflame.chatgpt native messaging registration on this computer.
+2. Install the extension supplied through the Web Store review flow. Keep SeeEnd running. Open its Application Integrations page (应用接入), click Install browser extension (安装浏览器扩展), and use the Connect and verify websites step (连接并验证网站) to register the com.aiflame.chatgpt native messaging host on this computer. The supplied extension only needs to be installed once.
 3. Open or refresh a supported AI chat website. The extension needs a new user-initiated chat after refresh; it does not retroactively track a generation already in progress.
 4. Click the extension toolbar icon, then Check current page (检查当前页面). The popup should show the site, bridge connection and recognized page controls. Device offline is acceptable for status-only review.
 
@@ -36,6 +36,6 @@ A page redesign or special image, voice, agent or deep-research mode may not be 
 
 ## Troubleshooting
 
-Native messaging host not found: keep the desktop app running and click Connect Chrome; ensure the desktop build uses this store item's extension ID. Refresh the AI page afterwards.
+Native messaging host not found: keep the desktop app running and reopen Install browser extension → Connect and verify websites; ensure the desktop build uses this store item's extension ID. Refresh the AI page afterwards.
 Page controls not recognized: use a standard text-chat page, refresh it, and submit a new message.
 Bridge connected but device offline: review the status-only workflow first; hardware is optional for this portion.

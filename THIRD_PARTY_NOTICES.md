@@ -18,6 +18,8 @@ SeeEnd 0.8.4 起的原创代码采用 LICENSE 中的专有许可，版权所有�
 
 CPython 使用 PSF；PyObjC 使用 MIT；PyInstaller bootloader 按其运行例外用于专有应用。系统动态库各自保留原有版权和许可证。随包 third_party_licenses/MANIFEST.json 记录实际材料版本和来源；各目录保留完整许可文本。
 
+核心 Python 模块使用 Cython 3.3.0 编译为原生动态库。Cython 使用 Apache-2.0，其上游许可声明编译输出不属于 Cython 的衍生作品；编译不改变 SeeEnd 原创代码的许可。随包提供 Cython 许可和上游材料，不包含 SeeEnd 原创源码或生成的 C 代码。
+
 libiconv、gettext/libintl、GLib 等 LGPL 动态库如被构建收录，其对应上游源码和发行方构建补丁也提供在第三方源码包中。SeeEnd 未自行修改这些库。
 
 ## 图标和浏览器资源
