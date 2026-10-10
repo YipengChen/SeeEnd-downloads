@@ -1,7 +1,7 @@
 # SeeEnd review test instructions
 
-Desktop app download: https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.5.
-Published desktop baseline: SeeEnd 0.8.5 for macOS Apple Silicon. The submitted Web Store review artifact remains extension 0.2.8; this is a historical review combination. Current source extension 0.2.10 and App 0.8.6 are prepared separately and are not yet claimed as published. Windows and Intel Mac review builds are not included in this kit.
+Desktop app download: https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.6.
+Published desktop baseline: SeeEnd 0.8.6 for macOS Apple Silicon, with extension 0.2.10 available on GitHub. The historical Web Store submission remains extension 0.2.8; publishing the new ZIP on GitHub does not mean it has been submitted to or approved by the store. Windows and Intel Mac review builds are not included in this kit.
 Reviewer contact: ypchenmail@gmail.com.
 
 The desktop native host accepts this store item ID (miokmdeomlchjpihkcnommpnheagoimc) and the existing development ID. Public download availability must be checked before submission.
@@ -39,3 +39,7 @@ A page redesign or special image, voice, agent or deep-research mode may not be 
 Native messaging host not found: keep the desktop app running and reopen Install browser extension → Connect and verify websites; ensure the desktop build uses this store item's extension ID. Refresh the AI page afterwards.
 Page controls not recognized: use a standard text-chat page, refresh it, and submit a new message.
 Bridge connected but device offline: review the status-only workflow first; hardware is optional for this portion.
+
+## Current release validation
+
+See [0.8.6 release checks](releases/v0.8.6/TESTING.md) for the completed source/native regression, real frozen HTTP lifecycle, archive signature and known acceptance limits. The original 0.8.5 review kit is preserved under releases/v0.8.5/.

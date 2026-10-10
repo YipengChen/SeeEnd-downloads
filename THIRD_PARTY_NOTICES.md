@@ -9,7 +9,7 @@ SeeEnd 0.8.4 起的原创代码采用 LICENSE 中的专有许可，版权所有�
 应用保留 Qt/PySide 的动态链接方式，没有应用层库哈希锁定。用户可以依 LGPL 修改和替换相应库，并为调试这些修改进行必要的逆向工程。专有许可中的限制不适用于这些权利。
 
 - 第三方许可文本、版权信息和构建版本：应用资源目录的 third_party_licenses/。
-- 本版本第三方源码及上游构建补丁：[SeeEnd-third-party-sources-0.8.5.zip](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.5/SeeEnd-third-party-sources-0.8.5.zip)。仅含第三方材料，不含 SeeEnd 原创源码。
+- 本版本第三方源码及上游构建补丁：[SeeEnd-third-party-sources-0.8.6.zip](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.6/SeeEnd-third-party-sources-0.8.6.zip)。0.8.6 已发布并核对下载摘要；仅含第三方材料，不含 SeeEnd 原创源码。已发布版本使用与安装包版本对应的材料。
 - 替换库与安装说明：[LIBRARY_REPLACEMENT.md](LIBRARY_REPLACEMENT.md)。
 
 **使用 SeeEnd 只需下载桌面安装包。** 安装包已包含运行所需的动态库及其许可文本；第三方源码与构建材料单独提供，供查阅、修改或重新构建第三方库时使用，无需下载即可使用 App。下载地址不可用时，可通过 ypchenmail@gmail.com 获取相应材料。
