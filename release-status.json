@@ -1,0 +1,11 @@
+{
+  "published": {
+    "app_version": "0.8.5",
+    "record_source": "existing local downloads checkout ea3e33e; not reverified remotely in this task"
+  },
+  "prepared": {
+    "app_version": "0.8.6",
+    "manifest": "releases/v0.8.6/release.json"
+  },
+  "externally_published_by_this_task": false
+}

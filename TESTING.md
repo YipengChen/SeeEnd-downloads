@@ -1,7 +1,7 @@
 # SeeEnd review test instructions
 
 Desktop app download: https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.5.
-Supported review build: SeeEnd 0.8.5 for macOS Apple Silicon; extension 0.2.8. Windows and Intel Mac review builds are not included in this kit.
+Published desktop baseline: SeeEnd 0.8.5 for macOS Apple Silicon. The submitted Web Store review artifact remains extension 0.2.8; this is a historical review combination. Current source extension 0.2.10 and App 0.8.6 are prepared separately and are not yet claimed as published. Windows and Intel Mac review builds are not included in this kit.
 Reviewer contact: ypchenmail@gmail.com.
 
 The desktop native host accepts this store item ID (miokmdeomlchjpihkcnommpnheagoimc) and the existing development ID. Public download availability must be checked before submission.
