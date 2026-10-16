@@ -1,6 +1,6 @@
 # 下载 SeeEnd
 
-> 当前发布基线：App **0.8.56** / 浏览器扩展 **0.2.13** / Skill **1.0.3**。下载发布与摘要见版本清单。扩展 0.2.13 已上传 Chrome 商店草稿，当前商店已发布版本为 0.2.12。
+> 当前发布基线：App **0.8.56** / 浏览器扩展 **0.2.13** / Skill **1.0.3**。分发包已发布并完成匿名下载及 SHA-256 校验，详情见版本清单。扩展 0.2.13 已上传，后台现为待审核；当前商店已发布版本为 0.2.12。
 
 **[下载 SeeEnd 0.8.56 · macOS Apple 芯片](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.56/SeeEnd-0.8.56-Darwin-arm64.zip)**
 
@@ -43,7 +43,7 @@
 
 [开发扩展 0.2.13 ZIP](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.56/SeeEnd-Web-extension-0.2.13.zip) · [SeeEnd Skill 1.0.3](https://github.com/YipengChen/SeeEnd-skill/releases/tag/v1.0.3)
 
-商店格式的扩展 ZIP 为待提交材料，GitHub 上传不表示 Chrome 商店提交或审核通过。
+商店格式的扩展 ZIP 供分发核对；后台当前为 0.2.13 待审核，GitHub 发布不表示商店审核通过。
 
 </details>
 

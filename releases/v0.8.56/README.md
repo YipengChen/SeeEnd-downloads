@@ -1,5 +1,7 @@
 # SeeEnd 0.8.56
 
+2026-10-16 已发布，四个分发包及独立 Skill 安装包均通过匿名下载和 SHA-256 校验。
+
 配套版本：App **0.8.56**、浏览器扩展 **0.2.13**、Skill **1.0.3**。App 仅提供 macOS Apple 芯片预览包，使用 ad-hoc 签名，未经过 Apple 公证。
 
 [下载 App](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.56/SeeEnd-0.8.56-Darwin-arm64.zip) · [开发扩展](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.56/SeeEnd-Web-extension-0.2.13.zip) · [Skill 1.0.3](https://github.com/YipengChen/SeeEnd-skill/releases/tag/v1.0.3)
@@ -10,4 +12,4 @@
 
 [构建身份](SeeEnd-build.json) · [完整资产清单](release.json) · [SHA-256](SHA256SUMS) · [验证范围](TESTING.md) · [安装与帮助](../../support.html)
 
-Chrome 商店后台已核对草稿 0.2.13、已发布 0.2.12，不公开分发。本次只上传新版草稿，未提交审核。GitHub 分发包与商店审核状态分别记录。
+Chrome 商店后台已核对 0.2.13 待审核、已发布 0.2.12，不公开分发。本次执行过新版上传，未点击提请审核；随后复核时后台已显示待审核。GitHub 分发包与商店审核状态分别记录。

@@ -1,21 +1,15 @@
 {
   "published": {
-    "app_version": "0.8.6",
-    "extension_version": "0.2.10",
-    "skill_version": "1.0.1",
-    "manifest": "releases/v0.8.6/release.json",
-    "release_url": "https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.6",
-    "verified_at": "2026-10-10T09:45:57.701091+00:00",
-    "record_source": "live GitHub release assets and anonymous full download SHA-256 verification"
-  },
-  "prepared": {
     "app_version": "0.8.56",
     "extension_version": "0.2.13",
     "skill_version": "1.0.3",
     "manifest": "releases/v0.8.56/release.json",
+    "release_url": "https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.56",
     "source_sha256": "d3323e2a3013acb6305c1ffc7e31c8aacd20dc6b5b0949c26984589b0670156e",
-    "prepared_at": "2026-10-16T21:58:15.837395+08:00",
-    "record_source": "local Gemini state fix, build, frozen smoke verification and archive; HTTP and post-update live browser tests remain unverified; not published"
+    "published_at": "2026-10-16T14:28:29Z",
+    "verified_at": "2026-10-16T22:28:50.966953+08:00",
+    "record_source": "live GitHub release assets and anonymous full download SHA-256 verification"
   },
-  "externally_published_by_this_task": false
+  "prepared": null,
+  "externally_published_by_this_task": true
 }
