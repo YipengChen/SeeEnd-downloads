@@ -13,7 +13,7 @@
     "extension_version": "0.2.12",
     "skill_version": "1.0.2",
     "manifest": "releases/v0.8.55/release.json",
-    "source_sha256": "54eaf53de64b4cd07e72409efe9c478cbccf383ab434b9c40542fc0a4e04fb1e",
+    "source_sha256": "576b5d99c94f014b1e527eb270c39ecbf541edfdcc55d07506ac43b1b33ea348",
     "prepared_at": "2026-10-16",
     "record_source": "local content audit, build and archive; not published"
   },
