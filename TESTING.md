@@ -1,7 +1,7 @@
 # SeeEnd review test instructions
 
-Desktop app download: https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.6.
-Published desktop baseline: SeeEnd 0.8.6 for macOS Apple Silicon, with extension 0.2.10 available on GitHub. The historical Web Store submission remains extension 0.2.8; publishing the new ZIP on GitHub does not mean it has been submitted to or approved by the store. Windows and Intel Mac review builds are not included in this kit.
+Desktop app download: https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.56.
+Published desktop baseline: SeeEnd 0.8.56 for macOS Apple Silicon, with extension 0.2.13 available on GitHub. The Web Store currently publishes extension 0.2.12; version 0.2.13 has been uploaded as a draft and has not been submitted for review by this update. Windows and Intel Mac review builds are not included in this kit.
 Reviewer contact: ypchenmail@gmail.com.
 
 The desktop native host accepts this store item ID (miokmdeomlchjpihkcnommpnheagoimc) and the existing development ID. Public download availability must be checked before submission.
@@ -21,6 +21,8 @@ The desktop native host accepts this store item ID (miokmdeomlchjpihkcnommpnheag
 4. Repeat on https://gemini.google.com/ and https://claude.ai/ if accounts and regional access permit. Additional adapters include DeepSeek, Qianwen, Doubao, Kimi, Yuanbao and Zhipu.
 5. Start a longer response, then click the website Stop control. The task should cancel / become idle and should not produce a done event for that cancelled generation.
 6. Refresh or close a page during another generation. It should not become successful completion. Merely opening historical completed replies must not create a new done event.
+7. From SeeEnd Activity Log, select the corresponding task and click Return to task. The originating browser conversation should become active; exact-message scrolling is not promised.
+8. On Gemini, if the current reply explicitly ends generation but never exposes successful completion actions, the task should become unknown after 5 seconds. Unknown is not done or a claimed provider failure.
 
 No SeeEnd account or subscription is required. Supported AI websites may independently require accounts. No third-party account credentials are included in this kit; if the reviewer needs supplied credentials, the developer must provide a dedicated authorized test account through the dashboard's reviewer-only credentials field.
 
@@ -42,4 +44,4 @@ Bridge connected but device offline: review the status-only workflow first; hard
 
 ## Current release validation
 
-See [0.8.6 release checks](releases/v0.8.6/TESTING.md) for the completed source/native regression, real frozen HTTP lifecycle, archive signature and known acceptance limits. The original 0.8.5 review kit is preserved under releases/v0.8.5/.
+See [0.8.56 release checks](releases/v0.8.56/TESTING.md) for the completed source/native regression, real frozen HTTP lifecycle, archive signature and known acceptance limits. The original 0.8.5 review kit is preserved under releases/v0.8.5/.

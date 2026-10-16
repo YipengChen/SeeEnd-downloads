@@ -9,13 +9,13 @@
     "record_source": "live GitHub release assets and anonymous full download SHA-256 verification"
   },
   "prepared": {
-    "app_version": "0.8.55",
-    "extension_version": "0.2.12",
-    "skill_version": "1.0.2",
-    "manifest": "releases/v0.8.55/release.json",
-    "source_sha256": "576b5d99c94f014b1e527eb270c39ecbf541edfdcc55d07506ac43b1b33ea348",
-    "prepared_at": "2026-10-16",
-    "record_source": "local content audit, build and archive; not published"
+    "app_version": "0.8.56",
+    "extension_version": "0.2.13",
+    "skill_version": "1.0.3",
+    "manifest": "releases/v0.8.56/release.json",
+    "source_sha256": "d3323e2a3013acb6305c1ffc7e31c8aacd20dc6b5b0949c26984589b0670156e",
+    "prepared_at": "2026-10-16T21:58:15.837395+08:00",
+    "record_source": "local Gemini state fix, build, frozen smoke verification and archive; HTTP and post-update live browser tests remain unverified; not published"
   },
   "externally_published_by_this_task": false
 }
