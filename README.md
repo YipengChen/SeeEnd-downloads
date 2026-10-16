@@ -1,5 +1,7 @@
 # 下载 SeeEnd
 
+> 本目录主下载入口保留 `release-status.json` 中最后留存的已发布 0.8.6 记录，本轮未联网复核。App 0.8.55／扩展 0.2.12 的本地材料在 releases/v0.8.55/ 准备；隐私页面源文稿已审校并纳入本次仓库更新，公开部署以 GitHub Pages 实际状态为准。
+
 **[下载 SeeEnd 0.8.6 · macOS Apple 芯片](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.6/SeeEnd-0.8.6-Darwin-arm64.zip)**
 
 **只需下载此安装包。** 已包含 App 和运行依赖，解压后启动 SeeEnd.app 即可。没有灯具也能使用。

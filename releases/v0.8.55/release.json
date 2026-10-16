@@ -1,0 +1,77 @@
+{
+  "status": "prepared",
+  "app_version": "0.8.55",
+  "extension_version": "0.2.12",
+  "skill_version": "1.0.2",
+  "contract_version": 1,
+  "schema_version": "1.0",
+  "build_receipt": "SeeEnd-build.json",
+  "source_sha256": "54eaf53de64b4cd07e72409efe9c478cbccf383ab434b9c40542fc0a4e04fb1e",
+  "external_publication_verified": false,
+  "prepared_at": "2026-10-16",
+  "assets": [
+    {
+      "role": "app",
+      "filename": "SeeEnd-0.8.55-Darwin-arm64.zip",
+      "path": "../../../code/dist/audit-0.8.55/SeeEnd-0.8.55-Darwin-arm64.zip",
+      "sha256": "2c38465a5a48b8b0b14f57b20977257641b68ba7f4581038424d6b224691f7dd",
+      "bytes": 56967513
+    },
+    {
+      "role": "third-party-sources",
+      "filename": "SeeEnd-third-party-sources-0.8.55.zip",
+      "path": "../../../code/dist/audit-0.8.55/SeeEnd-third-party-sources-0.8.55.zip",
+      "sha256": "2390f6d2fbc49f564f2b5245a0766a9fe0334f87da5b4e4753aa304c94bf06a6",
+      "bytes": 111719421
+    },
+    {
+      "role": "extension",
+      "filename": "SeeEnd-Web-extension-0.2.12.zip",
+      "path": "../../../code/dist/audit-0.8.55/SeeEnd-Web-extension-0.2.12.zip",
+      "sha256": "cabc1678315fadcf17d91e819b77a7dd175e0100256a97ea264f771e5a519ac9",
+      "bytes": 38807
+    },
+    {
+      "role": "store-extension",
+      "filename": "SeeEnd-Chrome-Web-Store-extension-0.2.12.zip",
+      "path": "../../../code/dist/audit-0.8.55/SeeEnd-Chrome-Web-Store-extension-0.2.12.zip",
+      "sha256": "145cac2a6c8ef09efc8b68e2eb2fd732a40592e3d442635c739b89166e6b6bb9",
+      "bytes": 35501
+    }
+  ],
+  "validation": {
+    "source": {
+      "discovered": 680,
+      "passed": 537,
+      "skipped": 143,
+      "environment_skips": 140,
+      "failures": 0,
+      "errors": 0,
+      "scope": "Earlier sandboxed full-suite run; not rerun during frozen HTTP revalidation."
+    },
+    "targeted": {
+      "passed": 63
+    },
+    "javascript": {
+      "passed": 184
+    },
+    "skill": {
+      "passed": 34
+    },
+    "frozen": {
+      "native_modules": 34,
+      "helper_processes": 25,
+      "real_http_lifecycle": "passed",
+      "http_tests": 3,
+      "http_failures": 0,
+      "http_errors": 0,
+      "http_skipped": 0,
+      "reverified_at": "2026-10-16T12:44:38.856111+00:00"
+    }
+  },
+  "validation_limits": [
+    "Earlier full-suite run skipped 140 sandbox-limited cases and 3 existing conditional cases; those full-suite counts remain historical. This unrestricted revalidation passed all 3 frozen HTTP tests with zero skips.",
+    "No new physical hardware, real account, system banner or full terminal/browser acceptance.",
+    "Validation itself did not publish binaries or replace the installed App. Repository documentation synchronization and Chrome draft-package upload are tracked separately; App 0.8.55 remains prepared."
+  ]
+}

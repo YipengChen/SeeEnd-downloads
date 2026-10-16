@@ -8,6 +8,14 @@
     "verified_at": "2026-10-10T09:45:57.701091+00:00",
     "record_source": "live GitHub release assets and anonymous full download SHA-256 verification"
   },
-  "prepared": null,
-  "externally_published_by_this_task": true
+  "prepared": {
+    "app_version": "0.8.55",
+    "extension_version": "0.2.12",
+    "skill_version": "1.0.2",
+    "manifest": "releases/v0.8.55/release.json",
+    "source_sha256": "54eaf53de64b4cd07e72409efe9c478cbccf383ab434b9c40542fc0a4e04fb1e",
+    "prepared_at": "2026-10-16",
+    "record_source": "local content audit, build and archive; not published"
+  },
+  "externally_published_by_this_task": false
 }
