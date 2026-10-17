@@ -1,47 +1,29 @@
-# SeeEnd review test instructions
+# SeeEnd 0.8.68 验证范围
 
-Desktop app download: https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.56.
-Published desktop baseline: SeeEnd 0.8.56 for macOS Apple Silicon, with extension 0.2.13 available on GitHub. The Web Store currently publishes extension 0.2.12; version 0.2.13 has been uploaded as a draft and has not been submitted for review by this update. Windows and Intel Mac review builds are not included in this kit.
-Reviewer contact: ypchenmail@gmail.com.
+配套：App 0.8.68、扩展 0.2.14、Skill 1.0.5。以下结果截至 2026-10-17，只覆盖列出的环境和行为。
 
-The desktop native host accepts this store item ID (miokmdeomlchjpihkcnommpnheagoimc) and the existing development ID. Public download availability must be checked before submission.
+## macOS Apple 芯片
 
-## Setup
+36 个核心模块原生编译，无 Python 回退。完整编译回归 840 项：837 通过、3 按条件跳过，零失败、零错误、零环境限制跳过。通知与音效领取校验的定向回归 73 项通过。构建、冻结验证和归档完成；25 项辅助进程检查及 3 项真实 HTTP 生命周期测试通过。后来只修改 Windows 测试数据库的清理顺序，产品源码未改变；macOS 再次构建、原生导入、冻结验证及归档通过，未重复全部 840 项。
 
-1. Download the macOS Apple Silicon desktop build from the link above, unzip it and launch SeeEnd.app. If macOS blocks the download, follow the normal OS approval process; contact the developer if the supplied review build cannot launch.
-2. Install the extension supplied through the Web Store review flow. Keep SeeEnd running. Open its Application Integrations page (应用接入), click Install browser extension (安装浏览器扩展), and use the Connect and verify websites step (连接并验证网站) to register the com.aiflame.chatgpt native messaging host on this computer. The supplied extension only needs to be installed once.
-3. Open or refresh a supported AI chat website. The extension needs a new user-initiated chat after refresh; it does not retroactively track a generation already in progress.
-4. Click the extension toolbar icon, then Check current page (检查当前页面). The popup should show the site, bridge connection and recognized page controls. Device offline is acceptable for status-only review.
+真实网页测试覆盖 ChatGPT 文字任务和后台完成、ChatGPT/Gemini 并发任务、Gemini 完成和停止生成。完成任务的通知与音效投递记录通过，用户确认实际系统通知和声音正常。Gemini 停止记为已取消，无完成音效；ChatGPT 停止在前一版本实测通过，0.8.68 额外任务在点击停止前已结束，不算新增停止验收。Cube Lite 长期卡死问题按用户实物长测通过保持已修复判定。
 
-## Functional test without hardware
+## Windows x64
 
-1. Use ChatGPT at https://chatgpt.com/ with an account you are authorized to use if required by the site. Submit an ordinary text request, for example: “List 100 everyday objects, one per line.”
-2. During generation, check the popup and SeeEnd Activity Log (活动记录) for a working event.
-3. After the reply ends and its completion controls appear, check for a done event / completed reason and a delivery result. This tests real page detection, not the separate desktop bridge simulation button.
-4. Repeat on https://gemini.google.com/ and https://claude.ai/ if accounts and regional access permit. Additional adapters include DeepSeek, Qianwen, Doubao, Kimi, Yuanbao and Zhipu.
-5. Start a longer response, then click the website Stop control. The task should cancel / become idle and should not produce a done event for that cancelled generation.
-6. Refresh or close a page during another generation. It should not become successful completion. Merely opening historical completed replies must not create a new done event.
-7. From SeeEnd Activity Log, select the corresponding task and click Return to task. The originating browser conversation should become active; exact-message scrolling is not promised.
-8. On Gemini, if the current reply explicitly ends generation but never exposes successful completion actions, the task should become unknown after 5 seconds. Unknown is not done or a claimed provider failure.
+20 项源码接入、34 项设备回归、201 项 JavaScript、36 个原生模块导入、25 项冻结辅助进程、3 项真实 HTTP 生命周期、2 项原生窗口布局通过。归档对应的 SeeEnd.exe 在真正 Windows Qt 后端单次启动，认证 API 与同 PID 的可见主窗口检查通过，并保存截图；测试进程和临时配置清理通过。
 
-No SeeEnd account or subscription is required. Supported AI websites may independently require accounts. No third-party account credentials are included in this kit; if the reviewer needs supplied credentials, the developer must provide a dedicated authorized test account through the dashboard's reviewer-only credentials field.
+首次完整编译回归执行 840 项：823 通过、16 跳过、0 断言失败、1 测试临时 SQLite 清理错误。清理顺序已修复，失败用例在 Windows 定向复测通过。后续构建保留原生导入、冻结和实际窗口验证，没有重复所有 840 项，不将两轮数字合并为完整重跑通过。另一个 CI 启动前端口探测问题已修复，2 项相关检查通过。
 
-## Optional hardware check
+下载后另核验 175 个源码文件的规范指纹、4 个 CI ZIP 的 CRC、3 个 EXE 与 36 个原生库的 AMD64 PE 架构、包内外构建收据及第三方材料摘要。公开资产另附 SHA256SUMS。Windows 平台路径排序产生的 receipt 指纹与 macOS 不同，逐文件清单和规范排序指纹确认产品源码一致。HTTP 测试日志含过期返回连接关闭时的 WinError 10054 堆栈，断言通过，不能称日志完全无异常。
 
-Add and configure a supported device in My Devices (我的设备), then repeat a text task. Verify the configured device behavior separately. A bridge acknowledgement or event in the activity log does not prove hardware illumination.
+## Skill 与发布包
 
-## Technical and privacy notes
+Skill 1.0.5 共 40 项测试通过，包括跨 App 契约检查、较大状态响应验签及篡改拒绝。安装 ZIP 逐文件匹配当前 Skill，解压后连接实际运行的 0.8.68 App，contract 与 status 均通过。输出仍为白名单摘要，根管理凭据不发送或输出。
 
-The extension bundles all JavaScript; it does not execute remotely hosted code. It sends only structured status events to the local desktop application. It does not read prompts, response text or credentials. Current supported-site URLs and control state are inspected locally. Qianwen and Zhipu include a bundled MAIN-world renderer scheduling helper for hidden tracked tasks; it adjusts pending rendering callbacks, not network traffic or chat contents.
+两平台 App 保持已验证构建的原始字节；第三方源码、扩展、收据和独立 Skill 分别记录摘要。仅公开运行包与相关许可材料，不公开本地日志、截图、个人配置或原创 App 源码。
 
-A page redesign or special image, voice, agent or deep-research mode may not be recognized. Browser shutdown, sleep, tab discard and freezing can prevent capture. When uncertain, the extension does not infer success from elapsed time.
+## 尚未覆盖
 
-## Troubleshooting
+微信实际送达未验收。Gemini 一轮任务约 255 秒后收到完成事件，但未取得网页生成终止的实际时点，因此提醒延迟仍待核对。Windows 用户桌面的真实浏览器账号、系统横幅、音频及实体设备操作未新增验收；云端真实 EXE 启动不替代这些验收。其余受支持网页没有在本轮逐站实测。
 
-Native messaging host not found: keep the desktop app running and reopen Install browser extension → Connect and verify websites; ensure the desktop build uses this store item's extension ID. Refresh the AI page afterwards.
-Page controls not recognized: use a standard text-chat page, refresh it, and submit a new message.
-Bridge connected but device offline: review the status-only workflow first; hardware is optional for this portion.
-
-## Current release validation
-
-See [0.8.56 release checks](releases/v0.8.56/TESTING.md) for the completed source/native regression, real frozen HTTP lifecycle, archive signature and known acceptance limits. The original 0.8.5 review kit is preserved under releases/v0.8.5/.
+macOS 包为 ad-hoc，未 Developer ID 签名或 Apple 公证；本机启动成功不代表其他用户通过浏览器下载后的首次打开体验已经验收。GitHub 发布不代表 Chrome 商店审核通过。
