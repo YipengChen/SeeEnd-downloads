@@ -2,6 +2,8 @@
 
 > 当前发布基线：App **0.8.56** / 浏览器扩展 **0.2.13** / Skill **1.0.3**。分发包已发布并完成匿名下载及 SHA-256 校验，详情见版本清单。扩展 0.2.13 已上传，后台现为待审核；当前商店已发布版本为 0.2.12。
 
+本地已准备 App 0.8.68 / 扩展 0.2.14 / Skill 1.0.5 的修复版本，尚未公开发布；进度与资产见[本地准备清单](releases/v0.8.68/release.json)。
+
 **[下载 SeeEnd 0.8.56 · macOS Apple 芯片](https://github.com/YipengChen/SeeEnd-downloads/releases/download/v0.8.56/SeeEnd-0.8.56-Darwin-arm64.zip)**
 
 **只需下载此安装包。** 已包含 App 和运行依赖，解压后启动 SeeEnd.app 即可。没有灯具也能使用。
