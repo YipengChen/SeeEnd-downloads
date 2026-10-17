@@ -123,7 +123,21 @@
       "passed": 11,
       "failed": 0
     },
-    "zip_crc": "allpublicZIPspassed"
+    "zip_crc": "allpublicZIPspassed",
+    "linux_source_ci": {
+      "python_versions": [
+        "3.11",
+        "3.13"
+      ],
+      "total_per_version": 840,
+      "passed_per_version": 822,
+      "skipped_per_version": 17,
+      "failures_per_version": 1,
+      "errors_per_version": 0,
+      "status": "failed",
+      "known_issue": "English 920px window: bound but disconnected WeChat action buttons cause 12px horizontal overflow; macOS default-font targeted retest passed; this specific state not retested on Windows",
+      "linux_binary_published": false
+    }
   },
   "changes": [
     "Fix valid desktop notification and sound claims being rejected when the UI task snapshot has not yet caught up with the Hub.",
@@ -164,7 +178,7 @@
   "release_url": "https://github.com/YipengChen/SeeEnd-downloads/releases/tag/v0.8.68",
   "published_at": "2026-10-17T12:24:29Z",
   "verified_at": "2026-10-17T12:25:13.980164+00:00",
-  "verified_source_revision": "524b2a6e0be736870e52be5c9803560f32fa255d",
+  "verified_source_revision": "75145cb7480875c4dd73c66476dc7fa21cee0f75",
   "release_assets": [
     {
       "role": "app",
